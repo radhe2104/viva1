@@ -53,7 +53,7 @@ function App() {
         </thead>
         <tbody>
           {
-            list.filter(j => j.Status == 'Done').map((i) => {
+            list.filter(j => j.gender == 'Female').map((i) => {
               return (
                 <tr>
                   <td>{i?.id}</td>
@@ -68,7 +68,7 @@ function App() {
         </tbody>
         <tbody>
           {
-            list.filter(j => j.Status != '').map((i) => {
+            list.filter(j => j.gender != 'Female').map((i) => {
               return (
                 <tr>
                   <td>{i?.id}</td>
